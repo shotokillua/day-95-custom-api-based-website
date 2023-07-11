@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</head>
+<body>
+<div style="margin-top: 50px;" class="ui container">
+<h1 class="ui center aligned header">Results</h1>
+
+<h3>Your text is: {{ text }}</h3>
+<h3>Your text sentiment is: {{ sentiment }}</h3>
+<br>
+<a class="ui blue button" href="{{ url_for('home') }}">Do Another!</a>
+
+</div>
+</body>
+</html>
